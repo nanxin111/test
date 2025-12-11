@@ -41,6 +41,6 @@ public class QuestionClass {
     
     @Override
     public String toString() {
-        return questionText+" "+
+        return questionText+" "+Arrays.toString(options);
     }
 }
