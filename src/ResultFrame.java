@@ -30,6 +30,7 @@ public class ResultFrame extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        resultLabel = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,6 +51,8 @@ public class ResultFrame extends javax.swing.JFrame {
             }
         });
 
+        resultLabel.setText("jLabel1");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -58,7 +61,9 @@ public class ResultFrame extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(49, 49, 49)
-                        .addComponent(jLabel3))
+                        .addComponent(jLabel3)
+                        .addGap(33, 33, 33)
+                        .addComponent(resultLabel))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(26, 26, 26)
                         .addComponent(jButton1))
@@ -73,7 +78,9 @@ public class ResultFrame extends javax.swing.JFrame {
                 .addGap(46, 46, 46)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel3)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3)
+                    .addComponent(resultLabel))
                 .addGap(43, 43, 43)
                 .addComponent(jButton1)
                 .addContainerGap(92, Short.MAX_VALUE))
@@ -127,5 +134,6 @@ public class ResultFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel resultLabel;
     // End of variables declaration//GEN-END:variables
 }
